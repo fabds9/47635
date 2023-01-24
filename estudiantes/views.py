@@ -6,3 +6,5 @@ def saludar(request):
     return HttpResponse(f'Hola comision 47635. Hora: {datetime.now()}')
 
 
+def listar_estudiantes(request):
+    return render(request=request, template_name='estudiantes/lista_estudiantes.html')
